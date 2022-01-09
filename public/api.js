@@ -1,15 +1,11 @@
 const api = axios.create({
-<<<<<<< HEAD
-  baseURL: "https://https://recados-database-stumpf1988.herokuapp.com/",
-=======
-  baseURL: "https://api-recados-stumpf1988.herokuapp.com/",
->>>>>>> 66e8b4592cb2ab812522e770216b317e009b9e2d
+baseURL: "https://https://recados-database-stumpf1988.herokuapp.com/",
 });
 
 
-
 function sair() {
-  window.location.href = "index.html";
+  window.location.href = "/";
+  //window.location.href = "index.html";
 }
 
 //post
