@@ -1,5 +1,5 @@
 const api = axios.create({
-baseURL: "https://https://recados-database-stumpf1988.herokuapp.com",
+baseURL: "https://recados-database-stumpf1988.herokuapp.com",
 });
 
 
