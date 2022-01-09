@@ -11,7 +11,7 @@ function entrar() {
     pass2: "",
   };
 
-  listaUser = JSON.parse(localStorage.getItem("listaUser"));
+  listaUser = JSON.parse(localStorage.getItem("listaUser") || "[]");
 
   listaUser.forEach((item) => {
     if (usuario.value == item.usuario && password.value == item.password) {
