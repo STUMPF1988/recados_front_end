@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Usuário</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card-image">
+            <picture>
+                <img src="image/foto.jpg" alt="praia" class="foto">
+            </picture>
+        </div>
+
+        <div class="card-new-user">
+            <h1>CRIAR CONTA</h1>
+            <label id="labelUserName" for="userName">USER NAME</label>
+            <br>
+            <input type="text" class="input2" id="usuario">
+            <br>
+            <label id="labelPassword" for="password">PASSWORD</label>
+            <br>
+            <input type="password" class="input2" id="password1">
+            <br>
+            <label id="labelRepeatPassword" for="repeatPassword">REPEAT PASSWORD</label>
+            <br>
+            <input type="password" class="input2" id="password2">
+            <br>
+            <input type="button" value="CRIAR CONTA AGORA!" class="button"  onclick="criarConta()">
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="newuser.js"></script>
+</body>
+
+</html>
