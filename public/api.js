@@ -1,11 +1,11 @@
 const api = axios.create({
-baseURL: "https://recados-database-stumpf1988.herokuapp.com",
+baseURL: "https://recados-back-end-stumpf1988.herokuapp.com/",
 });
 
 
 function sair() {
   window.location.href = "index.html";
-  //window.location.href = "/";
+  
 }
 
 //post
@@ -14,7 +14,7 @@ function cadastraRecado() {
   const detalhamento = document.querySelector("#recadoDetalhamento").value;
 
   api
-    .post("/recado", {
+    .post("/recados", {
       descricao,
       detalhamento,
     })
@@ -37,7 +37,7 @@ function cadastraRecado() {
 //get
 function mostrar() {
   api
-    .get("/recado", {})
+    .get("/recados", {})
     .then((result) => {
       const el = document.getElementById("dados");
       const lista = result.data.data;
@@ -84,7 +84,7 @@ function apagar() {
   const uid = document.querySelector("#ID").value;
 
    api
-    .delete("/recado/" + uid)
+    .delete("/recados/" + uid)
     .then((result) => {
       const recado = result.data;
       recadoList = recado;
@@ -107,7 +107,7 @@ function editar() {
   const detalhamento = document.querySelector("#recadoDetalhamento").value;
 
   api
-    .put("/recado/" + uid, {
+    .put("/recados/" + uid, {
       descricao,
       detalhamento,
     })
